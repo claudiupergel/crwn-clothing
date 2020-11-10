@@ -24,7 +24,6 @@ class SignIn extends React.Component {
 
     handleChange = event => {
         const { value, name } = event.target;
-
         this.setState ({ [name]: value })
     }
 
@@ -52,7 +51,7 @@ class SignIn extends React.Component {
                     label='password'
                     required 
                 />
-                
+
                     <div className='buttons'>
                         <CustomButton type='submit'>Sign In</CustomButton>
                         <CustomButton onClick = {signInWithGoogle} isGoogleSignIn>
